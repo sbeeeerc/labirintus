@@ -23647,13 +23647,13 @@ cr.getObjectRefTable = function () { return [
 	cr.system_object.prototype.cnds.Repeat,
 	cr.plugins_.Multiplayer.prototype.exps.ListRoomCount,
 	cr.plugins_.Multiplayer.prototype.cnds.OnSignallingJoinedRoom,
+	cr.plugins_.Sprite.prototype.acts.SubInstanceVar,
 	cr.plugins_.Sprite.prototype.acts.SetTowardPosition,
 	cr.plugins_.Mouse.prototype.exps.X,
 	cr.plugins_.Mouse.prototype.exps.Y,
 	cr.plugins_.Mouse.prototype.cnds.OnClick,
-	cr.behaviors.Bullet.prototype.acts.SetSpeed,
-	cr.plugins_.Sprite.prototype.acts.SubInstanceVar,
 	cr.plugins_.Keyboard.prototype.cnds.OnKey,
-	cr.plugins_.Sprite.prototype.cnds.IsAnimPlaying
+	cr.plugins_.Sprite.prototype.cnds.IsAnimPlaying,
+	cr.behaviors.Bullet.prototype.acts.SetSpeed
 ];};
 
