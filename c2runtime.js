@@ -10267,7 +10267,7 @@ window["cr_setSuspended"] = function(s)
 			this.is_else_block = (this.conditions[0].type == null && this.conditions[0].func == cr.system_object.prototype.cnds.Else);
 		}
 	};
-	window["_c2hh_"] = "BF3C8350F79B5F1759AC9F255B72E70F4428DEEB";
+	window["_c2hh_"] = "A9DC9C5674BE191C4BD10C2ED497C8E777925B1A";
 	EventBlock.prototype.postInit = function (hasElse/*, prevBlock_*/)
 	{
 		var i, len;
@@ -23557,13 +23557,13 @@ cr.behaviors.solid = function(runtime)
 }());
 cr.getObjectRefTable = function () { return [
 	cr.plugins_.Arr,
-	cr.plugins_.LocalStorage,
-	cr.plugins_.Multiplayer,
 	cr.plugins_.Mouse,
+	cr.plugins_.Multiplayer,
 	cr.plugins_.Keyboard,
+	cr.plugins_.LocalStorage,
 	cr.plugins_.Text,
-	cr.plugins_.Touch,
 	cr.plugins_.Sprite,
+	cr.plugins_.Touch,
 	cr.behaviors.EightDir,
 	cr.behaviors.solid,
 	cr.behaviors.Rotate,
@@ -23597,14 +23597,14 @@ cr.getObjectRefTable = function () { return [
 	cr.plugins_.Sprite.prototype.acts.Destroy,
 	cr.plugins_.Keyboard.prototype.cnds.IsKeyDown,
 	cr.behaviors.EightDir.prototype.acts.SimulateControl,
-	cr.behaviors.EightDir.prototype.acts.SetMaxSpeed,
+	cr.behaviors.EightDir.prototype.acts.SetSpeed,
 	cr.plugins_.Sprite.prototype.acts.SetAnimSpeed,
+	cr.system_object.prototype.acts.SetVar,
+	cr.behaviors.EightDir.prototype.acts.SetMaxSpeed,
 	cr.behaviors.EightDir.prototype.cnds.IsMoving,
 	cr.system_object.prototype.cnds.TriggerOnce,
-	cr.behaviors.EightDir.prototype.acts.SetSpeed,
 	cr.plugins_.Touch.prototype.cnds.OnTouchObject,
 	cr.plugins_.Sprite.prototype.cnds.IsVisible,
-	cr.system_object.prototype.acts.SetVar,
 	cr.system_object.prototype.acts.SetTimescale,
 	cr.system_object.prototype.acts.GoToLayout,
 	cr.plugins_.Sprite.prototype.cnds.CompareInstanceVar,
@@ -23623,13 +23623,12 @@ cr.getObjectRefTable = function () { return [
 	cr.plugins_.Text.prototype.cnds.IsVisible,
 	cr.system_object.prototype.acts.Wait,
 	cr.system_object.prototype.cnds.IsBetweenAngles,
-	cr.plugins_.Sprite.prototype.cnds.IsOverlapping,
-	cr.system_object.prototype.exps.abs,
 	cr.system_object.prototype.acts.SubVar,
 	cr.plugins_.Text.prototype.acts.Destroy,
 	cr.plugins_.Text.prototype.cnds.CompareInstanceVar,
 	cr.plugins_.Sprite.prototype.acts.SetAnimFrame,
-	cr.plugins_.Sprite.prototype.cnds.OnDestroyed,
+	cr.plugins_.Touch.prototype.cnds.OnTapGestureObject,
+	cr.plugins_.Touch.prototype.cnds.OnDoubleTapGestureObject,
 	cr.behaviors.Turret.prototype.acts.AddTarget,
 	cr.behaviors.Turret.prototype.cnds.OnShoot,
 	cr.plugins_.Sprite.prototype.acts.Spawn,
@@ -23640,16 +23639,6 @@ cr.getObjectRefTable = function () { return [
 	cr.system_object.prototype.acts.LoadState,
 	cr.plugins_.Sprite.prototype.acts.RotateTowardPosition,
 	cr.behaviors.LOS.prototype.cnds.HasLOSToObject,
-	cr.plugins_.Multiplayer.prototype.cnds.IsSupported,
-	cr.plugins_.Multiplayer.prototype.acts.SignallingConnect,
-	cr.plugins_.Multiplayer.prototype.cnds.OnSignallingConnected,
-	cr.plugins_.Multiplayer.prototype.cnds.OnSignallingLoggedIn,
-	cr.system_object.prototype.acts.SetLayerVisible,
-	cr.plugins_.Multiplayer.prototype.acts.SignallingRequestRoomList,
-	cr.plugins_.Multiplayer.prototype.cnds.OnRoomList,
-	cr.system_object.prototype.cnds.Repeat,
-	cr.plugins_.Multiplayer.prototype.exps.ListRoomCount,
-	cr.plugins_.Multiplayer.prototype.cnds.OnSignallingJoinedRoom,
 	cr.plugins_.Sprite.prototype.acts.SubInstanceVar,
 	cr.plugins_.Sprite.prototype.acts.SetTowardPosition,
 	cr.plugins_.Mouse.prototype.exps.X,
