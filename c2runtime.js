@@ -10267,7 +10267,7 @@ window["cr_setSuspended"] = function(s)
 			this.is_else_block = (this.conditions[0].type == null && this.conditions[0].func == cr.system_object.prototype.cnds.Else);
 		}
 	};
-	window["_c2hh_"] = "BF3C8350F79B5F1759AC9F255B72E70F4428DEEB";
+	window["_c2hh_"] = "A9DC9C5674BE191C4BD10C2ED497C8E777925B1A";
 	EventBlock.prototype.postInit = function (hasElse/*, prevBlock_*/)
 	{
 		var i, len;
@@ -23557,13 +23557,20 @@ cr.behaviors.solid = function(runtime)
 }());
 cr.getObjectRefTable = function () { return [
 	cr.plugins_.Arr,
+<<<<<<< HEAD
 	cr.plugins_.Keyboard,
 	cr.plugins_.LocalStorage,
 	cr.plugins_.Mouse,
 	cr.plugins_.Multiplayer,
+=======
+	cr.plugins_.Mouse,
+	cr.plugins_.Multiplayer,
+	cr.plugins_.Keyboard,
+	cr.plugins_.LocalStorage,
+>>>>>>> 74b87240deba3abb5f2d85bf5404e4c318516221
 	cr.plugins_.Text,
-	cr.plugins_.Touch,
 	cr.plugins_.Sprite,
+	cr.plugins_.Touch,
 	cr.behaviors.EightDir,
 	cr.behaviors.solid,
 	cr.behaviors.Rotate,
@@ -23627,6 +23634,10 @@ cr.getObjectRefTable = function () { return [
 	cr.system_object.prototype.acts.SubVar,
 	cr.plugins_.Text.prototype.acts.Destroy,
 	cr.plugins_.Text.prototype.cnds.CompareInstanceVar,
+<<<<<<< HEAD
+=======
+	cr.plugins_.Sprite.prototype.acts.SetAnimFrame,
+>>>>>>> 74b87240deba3abb5f2d85bf5404e4c318516221
 	cr.plugins_.Touch.prototype.cnds.OnTapGestureObject,
 	cr.plugins_.Touch.prototype.cnds.OnDoubleTapGestureObject,
 	cr.behaviors.Turret.prototype.acts.AddTarget,
